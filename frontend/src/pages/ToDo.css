@@ -1,0 +1,226 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+header .header-content {
+  margin: 0 auto;
+  margin-bottom: 50px;
+  width: 408px;
+}
+html {
+  background-image: url(../assets/back1.png);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+div.conteiner {
+  margin: 100px auto;
+  width: 500px;
+  background-color: #eaffff;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
+  border-radius: 50px;
+  padding-bottom: 50px;
+}
+
+header .header-content h1 {
+  margin: 0;
+  text-align: center;
+  color: rgb(68, 221, 196);
+  font: 36px Roboto, sans-serif;
+  font-weight: 800;
+  margin-bottom: 24px;
+}
+
+header .add-task {
+  width: 328px;
+  height: 49px;
+  margin-left: 40px;
+  background: rgba(132, 132, 134, 0.2);
+  border-radius: 25px;
+}
+header form {
+  height: 100%;
+}
+header .header-content input {
+  width: 80%;
+  height: 100%;
+  background: transparent;
+  border: none;
+  margin-left: 20px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #44434f;
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: bolder;
+}
+
+button:focus {
+  box-shadow: 0 0 0 0;
+  outline: 0;
+}
+
+header .header-content input:focus {
+  box-shadow: 0 0 0 0;
+  outline: 0;
+}
+
+header .header-content button {
+  position: relative;
+  height: 25px;
+  top: 8px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  padding: 5px 5px 30px 5px;
+}
+header .header-content button.btadd:hover {
+  transition: 300ms;
+  background-color: rgba(46, 191, 235, 0.3);
+  border-radius: 50%;
+}
+
+section {
+  margin: 0 auto;
+}
+
+div h2 {
+  color: rgba(92, 90, 108, 1);
+  font-family: Roboto;
+  font-size: 22px;
+  font-weight: 500 bolder;
+  text-align: center;
+  margin-bottom: 26px;
+  padding: 0;
+}
+
+section p {
+  color: #44434f;
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: bolder;
+  word-wrap: break-word;
+}
+
+section div.tarefas {
+  margin: auto;
+  display: flex;
+  width: 430px;
+  border: 2px solid rgb(68, 221, 196);
+  box-sizing: border-box;
+  border-radius: 25px;
+  white-space: pre-line;
+  margin-bottom: 6px;
+  align-items: center;
+}
+
+section div.tarefas:hover {
+  background: rgb(68, 221, 196, 0.1);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
+}
+
+section div.bttask {
+  opacity: 0;
+}
+
+div.tarefas:hover .bttask {
+  opacity: 1;
+}
+
+section div.tarefas p {
+  margin: 14px;
+  margin-left: 16px;
+  width: 320px;
+}
+section div.nontarefas {
+  margin: auto;
+  display: flex;
+  height: 100px;
+  width: 230px;
+  border: 2px solid rgba(68, 221, 196);
+  box-sizing: border-box;
+  border-radius: 25px;
+  white-space: pre-line;
+  margin-bottom: 6px;
+  align-items: center;
+}
+
+section .nontarefas p {
+  margin: 14px;
+  margin-left: 16px;
+  width: 320px;
+}
+
+section div.nonfeitos {
+  margin: auto;
+  display: flex;
+  height: 100px;
+  width: 230px;
+  border: 2px solid rgba(68, 221, 196);
+  box-sizing: border-box;
+  border-radius: 25px;
+  white-space: pre-line;
+  margin-bottom: 6px;
+  align-items: center;
+}
+
+section .nonfeitos p {
+  margin: 14px;
+  margin-left: 16px;
+  width: 320px;
+}
+
+section .nonfeitos img {
+  margin-left: 10px;
+}
+section .nontarefas img {
+  margin-left: 10px;
+}
+section div.tarefas div.bttask {
+  position: relative;
+  display: flex;
+  width: 55px;
+}
+
+section div.tarefas button {
+  width: 50px;
+  height: 35px;
+  justify-content: center;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 5px 8px 5px 8px;
+}
+
+section div.tarefas button.btdone {
+  margin-right: 10px;
+}
+section div.tarefas button.btdelete {
+  margin-right: 10px;
+}
+
+section div.tarefas button.btdone:hover {
+  transition: 500ms;
+  background-color: rgba(48, 245, 97, 0.3);
+  border-radius: 50%;
+}
+
+section div.tarefas button.btdelete:hover {
+  transition: 500ms;
+  background-color: rgba(242, 113, 74, 0.3);
+  border-radius: 50%;
+}
+
+section div.feito {
+  margin-top: 44px;
+}
+
+section div.feito h2 {
+  color: rgba(92, 90, 108, 1);
+  opacity: 70%;
+}
+
+section div.feito div.tarefas p {
+  text-decoration: line-through;
+}
