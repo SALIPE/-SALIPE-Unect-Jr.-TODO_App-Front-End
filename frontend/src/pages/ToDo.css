@@ -15,6 +15,7 @@ body {
 }
 
 div.conteiner {
+  padding: 40px;
   margin: 100px auto;
   width: 500px;
   background-color: #eaffff;
@@ -223,4 +224,13 @@ section div.feito h2 {
 
 section div.feito div.tarefas p {
   text-decoration: line-through;
+}
+
+section div.feito div.bttask {
+  padding-left: 50px;
+}
+
+section div.feito button {
+  width: 30px;
+  height: 35px;
 }
