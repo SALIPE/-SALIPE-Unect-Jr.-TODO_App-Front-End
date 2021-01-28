@@ -51,7 +51,7 @@ export default class ToDo extends Component {
     }
 
     handleSubmit  = async e =>{
-      e.preventDefault()
+      /*e.preventDefault()*/
 
       if (this.state.todo.length === 0) {
         console.log('Digite uma tarefa!');
@@ -75,7 +75,7 @@ export default class ToDo extends Component {
     }
 
   handleDone= async id =>{
-    
+    window.location.reload();
     api.put(`/posts/update/${id}`);
     
     const response = await api.get('posts/todo');
@@ -90,6 +90,7 @@ export default class ToDo extends Component {
   }
 
   handleDelete= async id =>{
+    window.location.reload();
     api.delete(`/posts/delete/${id}`);
 
     const response = await api.get('posts/todo');
